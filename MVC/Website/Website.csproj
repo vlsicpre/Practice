@@ -15,7 +15,7 @@
     <AssemblyName>Website</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -171,6 +171,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PostController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -183,12 +184,30 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="CYCSpinner\ActivitySearch.html" />
+    <Content Include="CYCSpinner\images\ajax-loader.gif" />
+    <Content Include="CYCSpinner\images\loader.gif" />
+    <Content Include="CYCSpinner\images\NextPrev.png" />
+    <Content Include="CYCSpinner\images\TransHRepeat.png" />
+    <Content Include="CYCSpinner\scripts\ActivitySearch.js" />
+    <None Include="CYCSpinner\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="CYCSpinner\scripts\jquery-1.10.2.min.js" />
+    <Content Include="CYCSpinner\scripts\README.txt" />
+    <Content Include="CYCSpinner\scripts\slick.js" />
+    <Content Include="CYCSpinner\styles\ActivitySearch.css" />
+    <Content Include="CYCSpinner\styles\fonts\slick.svg" />
+    <Content Include="CYCSpinner\styles\slick-theme.css" />
+    <Content Include="CYCSpinner\styles\slick.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="CYCSpinner\scripts\jquery-1.10.2.min.map" />
+    <Content Include="CYCSpinner\styles\fonts\slick.eot" />
+    <Content Include="CYCSpinner\styles\fonts\slick.ttf" />
+    <Content Include="CYCSpinner\styles\fonts\slick.woff" />
     <None Include="Properties\PublishProfiles\FTPPublish.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -267,7 +286,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>60147</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:60147/</IISUrl>
+          <IISUrl>http://localhost/MVC</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

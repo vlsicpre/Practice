@@ -15,6 +15,12 @@ namespace Website
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
+               name: "DefaultApi2",
+               routeTemplate: "api/{controller}/{action}/{categoryId}",
+               defaults: new { categoryId = RouteParameter.Optional }
+           );
+
+            config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
